@@ -32,7 +32,7 @@ class Auth extends CI_Controller
                     $cleanPost['firstname'] = $this->input->post('firstname');
                     $cleanPost['lastname'] = $this->input->post('lastname');
                     $cleanPost['banned_users'] = 'unban';
-                    $cleanPost['password'] = $hashed;
+                    $cleanPost['password'] = md5($this->input->post("password"));
                     unset($cleanPost['passconf']);
 
                     //insert to database

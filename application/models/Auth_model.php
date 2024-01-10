@@ -7,7 +7,7 @@ class Auth_model extends CI_Model
       'firstname' => $d['firstname'],
       'lastname' => $d['lastname'],
       'email' => $d['email'],
-      'password' => md5($d['password']),
+      'password' => $d['password'],
       'role' => $d['role'],
       'status' => $d['status'],
       'banned_users' => $d['banned_users']
