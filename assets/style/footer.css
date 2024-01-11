@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer {
+    background-color: #9E70B1;
+    color: white;
+    height: 105px;
+}
+.footer-icon {
+    margin-left: 20px;
+}
