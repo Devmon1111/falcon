@@ -23,7 +23,7 @@
     height: 100px;
 }
 .logout {
-    margin-left: auto;
+    margin-left: 315px;
 }
 .font-25 {
     font-size: 25;
@@ -34,9 +34,9 @@ button {
 }
 .register {
     margin-top: 5px;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 .login {
     margin-top: 5px;
-    margin-left: 100px;
+    margin-left: 680px;
 }
