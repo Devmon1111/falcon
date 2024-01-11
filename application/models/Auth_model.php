@@ -2,6 +2,7 @@
 class Auth_model extends CI_Model
 {
 
+
     public function check_login($post)
     {
         $this->db->select('*');
@@ -45,5 +46,12 @@ class Auth_model extends CI_Model
     {
         $this->db->get_where('users', array('email' => $email), 1);
         return $this->db->affected_rows() > 0 ? TRUE : FALSE;
+    }
+  
+      public function logout()
+    {
+        $this->session->set_userdata(array('id' => '', 'firstname' => '', 'status' => ''));
+        $this->session->sess_destroy();
+        redirect('');
     }
 }
